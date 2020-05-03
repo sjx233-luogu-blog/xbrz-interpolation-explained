@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="304" height="96" fill="transparent">
+  <g fill="black" font-size="14">
+    <text x="16" y="24">线形</text>
+    <text x="208" y="24">圆形</text>
+  </g>
+  <g fill="black" font-size="10">
+    <text x="16" y="40">对角线</text>
+    <text x="64" y="40">缓坡线</text>
+    <text x="112" y="40">陡坡线</text>
+  </g>
+  <path d="M 16 48 h 32 v 16 l -16,16 h -16 z
+    m 48,0 h 32 v 16 l -32,16 z
+    m 48,0 h 32 l -16,32 h -16 z
+    m 48,0 h 32 l -10.666667,21.333333 l -21.333333,10.666667 z
+    m 48,0 h 32 v 16 a 16,16,0,0,1,-16,16 h -16 z" fill="#7f7f7f" />
+  <g stroke="black" stroke-width="1" stroke-linecap="square">
+    <rect x="16" y="48" width="32" height="32" />
+    <rect x="64" y="48" width="32" height="32" />
+    <rect x="112" y="48" width="32" height="32" />
+    <rect x="160" y="48" width="32" height="32" />
+    <rect x="208" y="48" width="32" height="32" />
+  </g>
+</svg>
