@@ -1,5 +1,3 @@
-# xBRZ 插值算法详解
-
 xBRZ 是一种针对图像整数倍放大的插值算法。ACNH 就[用这种算法](https://twitter.com/lunasorcery/status/1242569546038460416)放大设计图案。~~（不这样说是不是没人看？~~
 
 ## 算法
@@ -37,7 +35,7 @@ $$ \begin{aligned}d_\mathrm{\color{red}HF}&=|\mathrm G-\mathrm E|+|\mathrm E-\ma
 ![E 和周围的像素](kernel3.svg)
 
 * 相邻的两个角同时是线形时，看起来会[很奇怪](mario-4x-bad.png "注意眼睛")，所以当 $ \mathrm{BF} $ 或 $ \mathrm{DH} $ 上也存在边缘时，右下角是圆形。
-* $ \mathrm G $、$ \mathrm H $、$ \mathrm I $、$ \mathrm C $、$ \mathrm F $ 形成 L 形图案时，$ \mathrm E $ 的右下角[不能是线形](super_mushroom-4x-bad.png "注意眼睛")，所以当 $ \mathrm E $、$ \mathrm I $ 不相近，但 $ \mathrm G $、$ \mathrm H $，$ \mathrm H $、$ \mathrm I $，$ \mathrm I $、$ \mathrm F $，$ \mathrm F $、$ \mathrm C $ 都相近时（颜色 A、B **相近**指 $ |\mathrm A-\mathrm B|<\frac{30}{255} $）。
+* $ \mathrm G $、$ \mathrm H $、$ \mathrm I $、$ \mathrm C $、$ \mathrm F $ 形成 L 形图案时，$ \mathrm E $ 的右下角[不能是线形](super_mushroom-4x-bad.png "注意眼睛")，所以当 $ \mathrm E $、$ \mathrm I $ 不相近，但 $ \mathrm G $、$ \mathrm H $，$ \mathrm H $、$ \mathrm I $，$ \mathrm I $、$ \mathrm F $，$ \mathrm F $、$ \mathrm C $ 都相近时，右下角是圆形（颜色 $ \mathrm A $、$ \mathrm B $ 相近指 $ |\mathrm A-\mathrm B|<\frac{30}{255} $）。
 
 对于线形角：
 
